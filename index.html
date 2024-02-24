@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accesibilidad Web</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>ACCESIBILIDAD WEB</h1>
+    </header>
+
+    <div id="content">
+        <table>
+            <tr>
+                <th>Tipo de Accesibilidad</th>
+                <th>Texto de Ejemplo</th>
+                <th>Acciones</th>
+            </tr>
+            <tr>
+                <td>Tipografía</td>
+                <td class="font-text">Este es un ejemplo de texto con tipografía Arial. Este texto es mucho más largo para poder apreciar mejor los cambios de tipografía.</td>
+                <td><button onclick="changeFont('font-text', 'Arial')">Arial</button><button onclick="changeFont('font-text', 'Times New Roman')">Times New Roman</button><button onclick="changeFont('font-text', 'Courier New')">Courier New</button></td>
+            </tr>
+            <tr>
+                <td>Tamaño de las Letras</td>
+                <td class="size-text">Este es un ejemplo de texto con tamaño de letra mediano. Este texto es mucho más largo para poder apreciar mejor los cambios de tamaño.</td>
+                <td><button onclick="increaseTextSize('size-text')">Disminuir</button><button onclick="decreaseTextSize('size-text')">Aumentar</button></td>
+            </tr>
+            <tr>
+                <td>Espaciado de Línea</td>
+                <td class="line-spacing-text">Este es un ejemplo de texto con espaciado de línea mediano. Este texto es mucho más largo para poder apreciar mejor los cambios de espaciado.</td>
+                <td><button onclick="adjustLineSpacing('line-spacing-text', 'small')">Pequeño</button><button onclick="adjustLineSpacing('line-spacing-text', 'medium')">Mediano</button><button onclick="adjustLineSpacing('line-spacing-text', 'large')">Grande</button></td>
+            </tr>
+            <tr>
+                <td>Espaciado entre Palabras</td>
+                <td class="word-spacing-text">Este es un ejemplo de texto con espaciado entre palabras medio. Este texto es mucho más largo para poder apreciar mejor los cambios de espaciado entre palabras.</td>
+                <td><button onclick="adjustWordSpacing('word-spacing-text', 'small')">Espacio normal</button><button onclick="adjustWordSpacing('word-spacing-text', 'medium')">Espacio intermedio</button><button onclick="adjustWordSpacing('word-spacing-text', 'large')">Más Espacio</button></td>
+            </tr>
+        </table>
+        <div class="FlexVideo">
+            <video controls>
+                <source src="./videoOrginal.mp4" type="video/mp4">
+                <!-- <source src="ruta_al_video.webm" type="video/webm"> -->
+                Tu navegador no soporta la etiqueta de vídeo.
+            </video>
+            <video controls>
+                <source src="./lenguajeSignos.mp4" type="video/mp4">
+                <!-- <source src="ruta_al_video.webm" type="video/webm"> -->
+                Tu navegador no soporta la etiqueta de vídeo.
+            </video>
+        </div>
+    </div>
+    <footer>
+        <p>© 2024 Creado por Tomas Cano Nieto y Adrián Leal Vacas</p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
